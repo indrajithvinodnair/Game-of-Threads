@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Check for Copy Paste</title>
+    <link rel="stylesheet" href="/static/styles/table.css"> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<!-- <body>
+
+  <form method="POST" action="http://localhost:5000/chkplgsrc"  enctype = "multipart/form-data">
+  <input type="file" name="src">
+  <input type="file" name="ans">
+  <input type="submit">
+  </form>
+ </body> 
+ -->
+ <body>
+    <div class="container"> 
+        <h2 class="page-header text-primary" style="margin-top:30px; margin-left:35%"> Copy Cat Checker </h2>
+        <div class="col-md-offset-3 col-md-5" style="margin-top:40px; margin-left:32%">
+            <form method="POST" action="http://localhost:5000/chkplgsrc" enctype="multipart/form-data">
+                <div class="form-group">
+                    <h5 class="page-header text-secondary font-weight-light"> Upload Answer file</h5>
+                    <h6><i>Supported format : docx</i></h6>
+                  <input type="file" class="form-control-file btn btn-primary btn-block" id="exampleFormControlFile1" name="src">
+                </div>
+                <div class="form-group">
+                    <h5 class="page-header text-secondary font-weight-light"> Upload Module Meterial</h5>
+                  <input type="file" class="form-control-file btn btn-primary btn-block" id="exampleFormControlFile1" name="ans">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success btn-block" value="Analyze">
+                </div>
+              </form>
+        </div>
+    </div>
+ </body>
+  </html>
